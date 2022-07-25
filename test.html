@@ -1,0 +1,75 @@
+<style>
+    :root {
+   --bg-color:#0d1323;
+   --dashboard-bg-color:#5746ea;
+   --track-box-bg-color:#1d204b;
+   --active-link-color:#f3f6ff;
+   --text-color:#a3a4d9;
+   --work-color:#ff8b64;
+   --play-color:#56c2e6;
+   --study-color:#ff5e7d;
+   --exercise-color:#4bcf83;
+   --social-color:#7235d1;
+   --self-care-color:#f1c75b;
+    --border-radius:10px
+}
+body {
+    color: white;
+}
+  .track-box {
+    position: relative;
+    background-color: var(--track-box-bg-color);
+    border-radius: var(--border-radius);
+    margin-top: 65px;
+  }
+  .track-box .colored-head {
+    position: absolute;
+    top: -34px;
+    width: 100%;
+    background-color: var(--work-color);
+    border-radius: var(--border-radius);
+    text-align: right;
+    z-index: -1;
+  }
+  .colored-head > img {
+    width: 50px;
+  }
+  .track-box .track-info {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .track-info .current {
+    padding: 20px 25px;
+  }
+  .track-info .current h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .track-info .current h3 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 300;
+  }
+  .track-info .previous {
+    text-align: right;
+    padding: 20px 25px;
+  }
+</style>
+<div class="track-box">
+  <div class="colored-head">
+    <img src="images/icon-work.svg" alt="icon-work" />
+  </div>
+  <div class="track-info">
+    <div class="current">
+      <h2>Work</h2>
+      <h3>32hrs</h3>
+    </div>
+    <div class="previous">
+      <img src="images/icon-ellipsis.svg" alt="icon-ellipsis" />
+      <p>Last Week - 36hrs</p>
+    </div>
+  </div>
+</div>
