@@ -65,26 +65,60 @@ body {
     justify-content: space-evenly;
     padding-bottom: 20px;
     padding-inline: 0;
+}
+.dashboard > ul > li > a {
+    cursor: pointer;
     color: var(--text-color);
+}
+.dashboard > ul > li > a:hover  {
+    color: var(--active-link-color);
+}
+.dashboard > ul > li > a.active {
+    color: var(--active-link-color);
 }
 .track-box {
     position: relative;
     border-radius:var(--border-radius);
-    margin-top: 55px;
+    margin-top: 60px;
     z-index: 1;
 }
-.track-box .colored-head {  
+.track-box .track-header {  
     position: absolute;
-    top: -30px;
+    top: -35px;
     width: 100%;
     border-radius: var(--border-radius);
     text-align: right;
     z-index: -1;
+    height: 60px;
 }
-.track-box .colored-head >img {
+.track-box .track-header >img {
     width: 50px;
+    margin-right: 15px;
 }
-.track-box .track-info {
+.track-box .track-content {
+    position: relative;
+    z-index: 3;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: var(--border-radius);
+    background-color: var(--track-box-bg-color);
+    padding: 15px;
+}
+.track-content .track-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+.track-content .track-title h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.track-content .track-title img {
+    height: 5px;
+}
+.track-content .track-info {
     position: relative;
     z-index: 3;
     display: flex;
@@ -92,20 +126,13 @@ body {
     align-content: center;
     border-radius: var(--border-radius);
     background-color: var(--track-box-bg-color);
-    padding: 15px 20px;
 }
 .track-info .current {
     align-self: center;
 }
-.track-info .current h2 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
 .track-info .current h3 {
     margin: 0;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 300;
 }
 .track-info .previous {
@@ -113,6 +140,7 @@ body {
 }
 .track-info .previous > p {
     color: var(--text-color);
+    font-size: 12px;
 }
 /* Start diff colored boxs */
 .work-color {

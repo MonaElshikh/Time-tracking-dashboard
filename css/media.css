@@ -1,0 +1,51 @@
+@media (min-width:992px) {
+    .time-track  {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        justify-content: center;
+        align-content: center;
+        padding: 180px;
+    }
+    .dashboard {
+        grid-row: span 2;
+        margin-bottom: 0;
+    }
+    .dashboard .dash-info {
+        display: block;
+        padding: 40px 20px 90px;
+        margin-bottom: 0;
+    }
+    .dash-titles {
+        margin-top: 35px;
+        margin-left: 0;
+    }
+    .dash-titles > h1 {
+        font-size: 40px;
+    }
+    .dashboard > ul {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .dashboard > ul > li {
+        padding-left: 20px;
+        margin: 30px 0;
+    }
+    .track-box {
+        margin-top: 40px;
+    }
+     .track-header { 
+        top: -40px !important;
+    }
+    .track-info {
+        display: block !important;
+    }
+    .track-info .current h3 {
+        font-size: 35px;
+        margin: 30px 0;
+    }
+    .track-info .previous {
+        text-align: left;
+    }
+}

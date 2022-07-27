@@ -8,20 +8,22 @@
       name="description"
       content="Time Tracking Dashborad By Frontend Mentor"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
+      rel="preload"
+      href="css/media.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
     <title>Time Tracking Dashborad | Mona Elshikh</title>
   </head>
   <body>
@@ -38,7 +40,7 @@
         </div>
         <ul>
           <li><a>Daily</a></li>
-          <li><a>Weekly</a></li>
+          <li><a class="active">Weekly</a></li>
           <li><a>Monthly</a></li>
         </ul>
       </div>
