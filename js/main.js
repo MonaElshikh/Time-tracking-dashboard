@@ -9,8 +9,8 @@ const imgsSrc = [
     { Work: "images/icon-work.svg" },
     { Play: "images/icon-play.svg" },
     { Study: "images/icon-study.svg" },
-    { Exercise: "images/icon-Exercise.svg" },
-    { Social: "images/icon-Social.svg" },
+    { Exercise: "images/icon-exercise.svg" },
+    { Social: "images/icon-social.svg" },
     { SelfCare: "images/icon-self-care.svg" }];
 //#endregion
 
