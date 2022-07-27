@@ -6,12 +6,12 @@ const url = "https://monaelshikh.github.io/Time-tracking-dashboard/data/data.jso
 let trackContainer = document.querySelector(".time-track");
 let tracksPeriods = document.querySelectorAll(".dashboard > ul >li >a");
 const imgsSrc = [
-    { Work: "../images/icon-work.svg" },
-    { Play: "../images/icon-play.svg" },
-    { Study: "../images/icon-study.svg" },
-    { Exercise: "../images/icon-Exercise.svg" },
-    { Social: "../images/icon-Social.svg" },
-    { SelfCare: "../images/icon-self-care.svg" }];
+    { Work: "images/icon-work.svg" },
+    { Play: "images/icon-play.svg" },
+    { Study: "images/icon-study.svg" },
+    { Exercise: "images/icon-Exercise.svg" },
+    { Social: "images/icon-Social.svg" },
+    { SelfCare: "images/icon-self-care.svg" }];
 //#endregion
 
 //#region  Functions
@@ -54,7 +54,7 @@ function createTimeTracks(tracks) {
         titleDiv.innerHTML = track.title;
         trackTitleDiv.appendChild(titleDiv);
         let prevImg = document.createElement("img");
-        prevImg.src = "../images/icon-ellipsis.svg";
+        prevImg.src = "images/icon-ellipsis.svg";
         prevImg.alt = "icon-ellipsis";
         trackTitleDiv.appendChild(prevImg);
         // add track title to trackContent div
