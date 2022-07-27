@@ -1,7 +1,7 @@
 
 //#region  Declaration
 // const url = "../data/data.json";
-const url = "https://github.com/MonaElshikh/Time-tracking-dashboard/data/data.json";
+const url = "https://monaelshikh.github.io/Time-tracking-dashboard/data/data.json";
 
 let trackContainer = document.querySelector(".time-track");
 let tracksPeriods = document.querySelectorAll(".dashboard > ul >li >a");
